@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box{
+            margin-top: 30px;
+          border-radius:10px ;
+          align-items: center;
+border: 0.2px solid gray;
+display:flex ;
+flex-direction: column;
+background-color: rgba(216, 213, 213, 0.753);
+box-shadow: 0 0 5px 3px gray;
+margin-left: 25%;
+height: 200px;
+width: 50%
+        }
+
+        input{
+  border: 0px solid gray;
+  width: 70%;
+  height: 25px;
+  border-radius: 5px;
+ text-align: center;
+ margin: 10px;
+ box-shadow: 0 2px 1px 1px rgb(160, 160, 160);
+ font-size: 20px;
+ 
+
+}
+button{
+  border: 0px;
+  font-size: 25px;
+  border-radius: 5px;
+  box-shadow: 0  0 5px 3px rgb(73, 73, 73);
+  color: white;
+  background: rgb(119, 119, 119);
+}
+
+.box1{
+margin-top: 30px;
+border-radius:10px ;
+align-items: center;
+border: 0.2px solid gray;
+display:flex ;
+flex-direction: column;
+background-color: rgba(216, 213, 213, 0.753);
+box-shadow: 0 0 5px 3px gray;
+margin-left: 25%;
+height: 300px auto;
+width: 50%
+}        
+h1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(245, 101, 101);
+}
+img{
+    
+    border-radius: 10px;
+    width: 350px;
+    
+}
+
+    </style>
+</head>
+<body>
+<div id="box">
+  <input id="main" type="text" placeholder="Enter Heading">
+  <input id="img" type="text" placeholder="Enter Img-src">
+  <input id="para" type="text" placeholder="Enter Paragraph">
+  <button id="btn" onclick="click2()">Click</button>
+</div>
+  <div class="box1">
+    <h1 id="mainhead"></h1>
+    <img id="img1" src="" alt="">
+    <p id="para1"></p>
+  </div>
+    
+    <script>
+function click2(){
+  var main1=document.getElementById("main").value;
+  var img2=document.getElementById("img").value;
+  var para2=document.getElementById("para").value;                                
+ document.getElementById("mainhead").innerHTML=main1
+ document.getElementById("img1").src = img2
+ document.getElementById("para1").innerHTML=para2
+ 
+}
+
+
+
+    
+    </script>
+
+</script>
+</body>
+</html>
